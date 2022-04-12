@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden; /* 스크롤이 안생기게 */
+  color: rgb(29, 29, 31);
+  letter-spacing: -0.05em; /* 자간 */
+  background: white;
+}
+
+p {
+  line-height: 1.6; /* 행간 */
+}
+
+.global-nav,
+.local-nav {
+  display: flex;
+  max-width: 1000px;
+  height: 44px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.global-nav {
+  justify-content: space-between;
+}
+
+.local-nav {
+  height: 52px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* local-nav a인데 not 키워드는 해당 조건을 만족하는 요소는 제외 */
+.local-nav a:not(.local-nav-item) {
+  margin-left: 2em;
+}
+
+.local-nav-item {
+  margin-right: auto;
+}
