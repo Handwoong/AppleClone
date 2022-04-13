@@ -94,6 +94,8 @@ a {
 .description {
   padding: 0 1rem;
   font-size: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
   color: #888;
 }
 
@@ -119,6 +121,8 @@ a {
   padding: 0 1rem;
   font-size: 2rem;
   color: #888;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .mid-message strong {
@@ -127,8 +131,10 @@ a {
 
 .canvas-caption {
   padding: 0 1rem;
-  color: #888;
   font-size: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #888;
 }
 
 .footer {
@@ -137,4 +143,42 @@ a {
   justify-content: center;
   height: 7rem;
   background-color: darkorange;
+}
+
+@media (min-width: 1024px) {
+  #scroll-section-0 h1 {
+    font-size: 9vw; /* 윈도우 창 사이즈의 9% 크기 */
+  }
+
+  .main-message {
+    font-size: 4vw;
+  }
+
+  .description {
+    font-size: 2rem;
+  }
+
+  .description strong {
+    font-size: 6rem;
+  }
+
+  #scroll-section-2 .main-message {
+    font-size: 6vw;
+  }
+
+  .main-message small {
+    font-size: 1.5vw;
+  }
+
+  .desc-message {
+    width: 20%;
+  }
+
+  .mid-message {
+    font-size: 4vw;
+  }
+
+  .canvas-caption {
+    font-size: 2rem;
+  }
 }
